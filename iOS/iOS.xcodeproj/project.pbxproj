@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		634CEDF2224216E7007CB291 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634CEDF1224216E7007CB291 /* DetailViewController.swift */; };
 		63B9D04C2241EA960071F3BC /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B9D04B2241EA960071F3BC /* ListTableViewController.swift */; };
 		63B9D0502241EC830071F3BC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B9D04F2241EC830071F3BC /* R.generated.swift */; };
 		63B9D0532241F2CB0071F3BC /* ContactEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B9D0522241F2CB0071F3BC /* ContactEntity.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		634CEDF1224216E7007CB291 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		63B9D04B2241EA960071F3BC /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		63B9D04F2241EC830071F3BC /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		63B9D0522241F2CB0071F3BC /* ContactEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactEntity.swift; sourceTree = "<group>"; };
@@ -94,6 +96,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		634CEDF0224216C2007CB291 /* UIDetail */ = {
+			isa = PBXGroup;
+			children = (
+				634CEDF1224216E7007CB291 /* DetailViewController.swift */,
+			);
+			path = UIDetail;
+			sourceTree = "<group>";
+		};
 		63B9D04A2241EA500071F3BC /* UIList */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +153,7 @@
 		63F5455E2241E0A4002F1322 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				634CEDF0224216C2007CB291 /* UIDetail */,
 				63B9D056224202720071F3BC /* API */,
 				63B9D0512241F2A40071F3BC /* Models */,
 				63B9D04A2241EA500071F3BC /* UIList */,
@@ -371,6 +382,7 @@
 				63B9D0532241F2CB0071F3BC /* ContactEntity.swift in Sources */,
 				63B9D05A224202F60071F3BC /* Router.swift in Sources */,
 				63B9D058224202920071F3BC /* API.swift in Sources */,
+				634CEDF2224216E7007CB291 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
