@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.7.3)
+  - IQKeyboardManagerSwift (6.2.0)
+  - Kingfisher (4.10.1)
+  - R.swift (5.0.2):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.0)
+  - SnapKit (4.2.0)
+  - SwiftLint (0.28.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7.3)
+  - IQKeyboardManagerSwift (~> 6.2.0)
+  - Kingfisher (~> 4.10.1)
+  - R.swift (~> 5.0.0.alpha.2)
+  - SnapKit (~> 4.2.0)
+  - SwiftLint (~> 0.28.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - R.swift
+    - R.swift.Library
+    - SnapKit
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  R.swift: 81455d81467763cbd3f4d79d938d05f4ac4c0228
+  R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftLint: f1629ae733b64e9cad20052de01d1debd5b640e7
+
+PODFILE CHECKSUM: fd61b5e80a9e4f0048162037e7d0dde01ae2ef90
+
+COCOAPODS: 1.6.1
