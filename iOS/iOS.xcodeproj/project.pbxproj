@@ -16,7 +16,6 @@
 		63F545602241E0A4002F1322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F5455F2241E0A4002F1322 /* AppDelegate.swift */; };
 		63F545652241E0A4002F1322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F545632241E0A4002F1322 /* Main.storyboard */; };
 		63F545672241E0A5002F1322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F545662241E0A5002F1322 /* Assets.xcassets */; };
-		63F5456A2241E0A5002F1322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F545682241E0A5002F1322 /* LaunchScreen.storyboard */; };
 		63F545752241E0A5002F1322 /* iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F545742241E0A5002F1322 /* iOSTests.swift */; };
 		CBB0EEF03B7703C72A3B5D79 /* Pods_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B5A39A12CECA8EFF8F0BAB /* Pods_iOSTests.framework */; };
 		F6DF0DED97892E3089207E23 /* Pods_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0EB682DD45F50F188BCC57 /* Pods_iOS.framework */; };
@@ -43,7 +42,6 @@
 		63F5455F2241E0A4002F1322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63F545642241E0A4002F1322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63F545662241E0A5002F1322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		63F545692241E0A5002F1322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63F5456B2241E0A5002F1322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63F545702241E0A5002F1322 /* iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F545742241E0A5002F1322 /* iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTests.swift; sourceTree = "<group>"; };
@@ -96,20 +94,29 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		634CEDF0224216C2007CB291 /* UIDetail */ = {
+		634CEDF0224216C2007CB291 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
 				634CEDF1224216E7007CB291 /* DetailViewController.swift */,
 			);
-			path = UIDetail;
+			path = Detail;
 			sourceTree = "<group>";
 		};
-		63B9D04A2241EA500071F3BC /* UIList */ = {
+		635845ED22434B8C00F2483C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				634CEDF0224216C2007CB291 /* Detail */,
+				63B9D04A2241EA500071F3BC /* List */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		63B9D04A2241EA500071F3BC /* List */ = {
 			isa = PBXGroup;
 			children = (
 				63B9D04B2241EA960071F3BC /* ListTableViewController.swift */,
 			);
-			path = UIList;
+			path = List;
 			sourceTree = "<group>";
 		};
 		63B9D0512241F2A40071F3BC /* Models */ = {
@@ -153,14 +160,12 @@
 		63F5455E2241E0A4002F1322 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				634CEDF0224216C2007CB291 /* UIDetail */,
+				635845ED22434B8C00F2483C /* ViewController */,
 				63B9D056224202720071F3BC /* API */,
 				63B9D0512241F2A40071F3BC /* Models */,
-				63B9D04A2241EA500071F3BC /* UIList */,
 				63F5455F2241E0A4002F1322 /* AppDelegate.swift */,
 				63F545632241E0A4002F1322 /* Main.storyboard */,
 				63F545662241E0A5002F1322 /* Assets.xcassets */,
-				63F545682241E0A5002F1322 /* LaunchScreen.storyboard */,
 				63F5456B2241E0A5002F1322 /* Info.plist */,
 			);
 			path = iOS;
@@ -183,11 +188,11 @@
 			buildConfigurationList = 63F545792241E0A5002F1322 /* Build configuration list for PBXNativeTarget "iOS" */;
 			buildPhases = (
 				204BF603615BB7C2C4128502 /* [CP] Check Pods Manifest.lock */,
+				63B9D0492241E9390071F3BC /* ShellScript */,
 				63F545582241E0A4002F1322 /* Sources */,
 				63F545592241E0A4002F1322 /* Frameworks */,
 				63F5455A2241E0A4002F1322 /* Resources */,
 				5053C4318BDBE13EDD9AA78A /* [CP] Embed Pods Frameworks */,
-				63B9D0492241E9390071F3BC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -260,7 +265,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63F5456A2241E0A5002F1322 /* LaunchScreen.storyboard in Resources */,
 				63F545672241E0A5002F1322 /* Assets.xcassets in Resources */,
 				63F545652241E0A4002F1322 /* Main.storyboard in Resources */,
 			);
@@ -345,7 +349,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
 		FDAC40C576479514DB9A8CFF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -411,14 +415,6 @@
 				63F545642241E0A4002F1322 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		63F545682241E0A5002F1322 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63F545692241E0A5002F1322 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
